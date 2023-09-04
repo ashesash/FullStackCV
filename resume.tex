@@ -1,0 +1,222 @@
+\documentclass[11pt, a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\usepackage{marvosym}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Change the geometry
+\geometry{left=1.4cm, top=1cm, right=1.4cm, bottom=0.2cm, footskip=.2cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+% Title name
+\namesection{Aishwarya}{Sahu}{
+\phone{0402 006345} \email{\href{mailto:aishwarya.s@live.com}{aishwarya.s@live.com}}
+\github {\href{https://github.com/ashesash}{/ashesash}}
+\linkedin {\href{https://www.linkedin.com/in/aishwaryasahu/}{/aishwaryasahu}}
+\Mundus {\href{https://www.ashsahu.com/}{ashsahu.com}}
+}
+\sectionsep
+
+% Column one
+\begin{minipage}[t]{0.38\textwidth} 
+
+% Skills
+\cvsection{Skills}
+\sectionsep
+\subsection{Programming}
+Python \textbullet{}   JavaScript \textbullet{} C++
+\sectionsep
+
+\subsection{Frontend}
+ReactJS \textbullet{}  NextJS \textbullet{} HTML \textbullet{} CSS \textbullet{} Tailwind
+\sectionsep
+
+\subsection{Backend}
+Django \textbullet{}   DRF \textbullet{} Flask \textbullet{} NodeJS 
+\sectionsep
+
+\subsection{Data}
+Excel \textbullet{}   SQL \textbullet{} Tableau \textbullet{} Matlab 
+\sectionsep
+
+\subsection{Miscellaneous}
+Git(Github) \textbullet{} \LaTeX \textbullet{} Tableau \textbullet{} Bash \textbullet{} FlyIO \textbullet{} Netlify \textbullet{} Insomnia
+\sectionsep
+
+% Certification
+\cvsection{Certification} 
+\sectionsep
+\subsection{She Codes}
+\descript{Full Stack Engineering}
+\cvevent{2023}{Sydney, NSW} 
+\sectionsep
+
+\subsection{EntryLevel}
+\descript{Product Management}
+\cvevent{2020}{Sydney, NSW} 
+\sectionsep
+
+% Education
+\cvsection{Education} 
+\sectionsep
+\subsection{UNSW Sydney}
+\descript{BE (hons) in Mechanical Engineering}
+\cvevent{2020}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+% Awards
+\cvsection{Awards}
+\sectionsep
+\subsection{Winner}
+\descript{Microsoft Codess Australia: Share Your Story}
+\cvevent{2020}{Sydney, NSW}
+Highlighted personal brand and strengths through storytelling
+\sectionsep
+
+\subsection{2nd Prize}
+\descript{UNSW Heroes}
+\cvevent{2018}{Sydney, NSW}
+Redesigned the end of term UNSW student survey with an MVP to demonstrate real time feedback
+\sectionsep
+
+\subsection{Winner}
+\descript{Datadriven.sg Hackathon}
+\cvevent{2017}{Sydney, NSW}
+Built a user-centric data visualization dashboard which aimed to reduce stress amongst flight travelers using Yellowfin BI and Tableau
+\sectionsep
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.58\textwidth} 
+
+% Experience
+\cvsection{Experience}
+\sectionsep \\ %fix for section spacing
+\runsubsection{Lead Instructor} \\
+\descript{Code Camp}
+\cvevent{June 2023 – Present}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Teaching students between year 1 to year 12 block coding or line coding on the native Code Camp platform for class sizes of up to 40 students
+\item Guiding students with decomposition and debugging errors and helping with customising their code
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Engineering Performance Officer} \\
+\descript{Australian Glass and Window Association}
+\cvevent{Apr 2022 – Aug 2022}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Used data analytics tools within Excel and Python to manage the transfer of the database for Window Energy Rating Scheme(WERS) to a new cloud based medium and coordinated the distribution of tasks within the team
+\item Developed strategies and liaise with engineers to troubleshoot any errors with WERSLink while maintaining its functionality for members, simulators, auditors and other stakeholders
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Graduate Mechanical Engineer} \\
+\descript{GWA Consultants Australia}
+\cvevent{Mar 2021 – Mar 2022}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Modified the internal excel tools and implemented the use of macros and VBA used for design and heat load calculation
+\item Collaborated with external sales engineers to get information of equipment fit for projects and produced documents for tender review
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Academic Demonstrator} \\
+\descript{UNSW}
+\cvevent{Feb 2019 – Nov 2019}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Delivered lectures to 30+ students, facilitating a comprehensive understanding of the fundamental theory behind the assigned end of the term project and supported in RobotC development
+\item Graded 7 assessments for the course each term as well as writing tasks for all first year engineering students
+\item Strategised lesson plans per week with the lecturer and other demonstrator for the most effective outcomes
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Procurement Intern} \\
+\descript{Vertiv}
+\cvevent{Nov 2018 – Nov 2019}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Conducted Spend Analvsis of mechanical and electrical subcontractors by product category, and by ticket size
+\item Coordinated the efforts of the graduate engineers to review the preferred subcontractor list for capabilitv and regional
+presence and work closely with ESC to implement tensioning Post-Order
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage} 
+
+\newpage
+\sectionsep
+
+% Recent Projects
+\cvsection{Recent Projects} \\
+
+\runsubsection{WORKSHOP SIGN UP PLATFORM} \\
+\descript{TECH STACK: DRF, REACTS, NETLIFY, FLY.IO, GIT}
+
+ A workshop sign up app built with backend in Django and frontend in React]S was made to
+provide a platform where someone interested to run a workshop can volunteer to run an existing workshop or a new workshop
+\sectionsep
+
+\runsubsection{CROWDFUNDING APP} \\
+\descript{TECH STACK: DRF, REACTS, NETLIFY, FLY.IO, GIT}
+ 
+Created the backend of a crowdfunding app in DR with the functionality to create user logins and create campaigns where users can pledge money
+
+\runsubsection{SHE CODES NEWS WEBSITE} \\
+\descript{TECH STACK: DJANGO, NETLIFY, GIT}
+ 
+A blog posting app that allows users to create blogs and allows other users to like and comment on the blogs
+
+\runsubsection{TO DO LIST} \\
+\descript{TECH STACK: FLASK, SEMANTIC UI, FLY.IO, GIT}
+ 
+A simple to do list which allows users to add an item and mark it as complete. Used Semantic UI for a clean frontend interface
+ 
+
+% Volunteer
+\cvsection{Volunteer}
+
+\runsubsection{Design Engineer} \\
+\descript{Engineers Without Border}
+\cvevent{Nov 2020 – Present}{Sydney/Phenom Penh} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Used computational analysis for the accessible moto project which is a modified scooter aimed to enable 35k wheel chair users to autonomously board the vehicle
+\sectionsep
+
+\runsubsection{IT Executive} \\
+\descript{Women In Technology UNSW Chapter}
+\cvevent{Nov 2017 – Dec 2018}{Sydney, NSW} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Built and maintained the society's website and managed their enterprise email setup. Helped with organising the annual WIT Hackathon by gathering industry mentors and was the session photographer
+\sectionsep
+
+\end{document}  
