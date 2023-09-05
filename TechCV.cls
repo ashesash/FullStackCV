@@ -2,7 +2,7 @@
 %                                Declaration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ProvidesClass{MagicalCV}[2022/05/31 CV class]
+\ProvidesClass{TechCV}[2023/09/06 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{
@@ -45,6 +45,7 @@
 \RequirePackage{setspace}
 % Use icons from font-awesome
 \usepackage[default]{lato}
+% \usepackage[default]{Montserrat}
 \RequirePackage{fontawesome5}
 \RequirePackage{roboto}
 \RequirePackage[default,opentype]{sourcesanspro}
@@ -64,7 +65,7 @@
 \RequirePackage{dashrule}
 % Tables
 \RequirePackage{multirow,tabularx}
-% Change the page laout
+% Change the page layout
 \RequirePackage{changepage}
 
 
@@ -72,16 +73,16 @@
 %                                   Icons
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\emailsymbol}{\faAt}
-\newcommand{\phonesymbol}{\faPhone}
-\newcommand{\homepagesymbol}{\faChain}
-\newcommand{\locationsymbol}{\faMapMarker}
-\newcommand{\linkedinsymbol}{\faLinkedin}
-\newcommand{\twittersymbol}{\faTwitter}
-\newcommand{\githubsymbol}{\faGithub}
-\newcommand{\orcidsymbol}{\aiOrcid}
-\newcommand{\mailsymbol}{\faEnvelope}
-\newcommand{\websitesymbol}{\faGlobe}
+\newcommand{\emailsymbol}{\color[HTML]{1C6D73}\faAt}
+\newcommand{\phonesymbol}{\color[HTML]{1C6D73}\faPhone}
+\newcommand{\homepagesymbol}{\color[HTML]{1C6D73}\faChain}
+\newcommand{\locationsymbol}{\color[HTML]{1C6D73}\faMapMarker}
+\newcommand{\linkedinsymbol}{\color[HTML]{1C6D73}\faLinkedin}
+\newcommand{\twittersymbol}{\color[HTML]{1C6D73}\faTwitter}
+\newcommand{\githubsymbol}{\color[HTML]{1C6D73}\faGithub}
+\newcommand{\orcidsymbol}{\color[HTML]{1C6D73}\aiOrcid}
+\newcommand{\mailsymbol}{\color[HTML]{1C6D73}\faEnvelope}
+\newcommand{\websitesymbol}{\color[HTML]{1C6D73}\faGlobe}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{0.5em}}}
 
@@ -137,7 +138,9 @@
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
 \definecolor{awesome-purple}{HTML}{5D3FD3}
-\colorlet{awesome}{awesome-red}
+\definecolor{awesome-teal}{HTML}{1C6D73}
+\definecolor{awesome-darkteal}{HTML}{4D7A7B}
+% \colorlet{awesome}{awesome-red}
 
 % Boolean value to switch section color highlighting
 \newbool{acvSectionColorHighlight}
@@ -145,7 +148,7 @@
 
 % Awesome section color
 \def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome-darkteal}#1#2#3}}{#1#2#3}%
 }
 
 
@@ -301,7 +304,8 @@
 \renewcommand\refname{\vskip -1.5cm}
 
 % Set main fonts
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Color=primary, Path = fonts/Montserrat/,BoldItalicFont=Montserrat-BoldItalic,BoldFont=Montserrat-ExtraBold,ItalicFont=Montserrat-Italic]{Montserrat-Light}
+\setsansfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
@@ -332,7 +336,7 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/Montserrat/]{Montserrat-Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subheadings command
 \titleformat{\subsection}{
